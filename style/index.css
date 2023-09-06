@@ -1,1 +1,120 @@
 /* CSS stillerinizi buraya girin */
+@import url(https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css);
+body {
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 12rem;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+header h1, nav {
+    width: 70%;
+    margin-left: 7%;
+    height: 2em;
+}
+header a {
+    background-color: white;
+    color: black;
+    padding: 1%; 
+    text-decoration: none;
+    border-color: black;
+    border-style: solid;
+}
+header a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.container {
+    margin: 5%;
+}
+
+
+.about {
+    display: flex;
+    margin-left: 2%;
+}
+.about img {
+    max-width: 50%;
+    height: 50%;
+    display: flex;
+}
+.about-text {
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+}
+.projects-button-about{
+    text-decoration: none;
+    background-color: white;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-info {
+    display: flex;
+    color:white;
+    max-width:100% ;
+    text-align: center;
+    margin-top: 5%;
+}
+.project-info img{
+    max-width: 70%;
+}
+.project-info a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: grey;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+footer a {
+    margin: 1%;
+}
+.contact-me-footer {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+}
+.contact-me-footer:hover {
+    background-color: grey;
+    transition: 0.5s;
+}
+
+.social-media-footer{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.social-media-footer a {
+    color: white;
+    text-decoration: none;
+}
+.social-media-footer a:hover {
+    text-decoration:underline;
+    transition: 0.5s;
+}
