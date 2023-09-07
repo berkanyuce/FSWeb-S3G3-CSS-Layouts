@@ -18,6 +18,10 @@ header h1, nav {
     margin-left: 7%;
     height: 2em;
 }
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
 header a {
     background-color: white;
     color: black;
@@ -40,6 +44,7 @@ header a:hover {
 .about {
     display: flex;
     margin-left: 2%;
+    align-items: center;
 }
 .about img {
     max-width: 50%;
@@ -62,6 +67,7 @@ header a:hover {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .project-info {
     display: flex;
@@ -90,6 +96,7 @@ footer {
 }
 footer a {
     margin: 1%;
+    text-align: center;
 }
 .contact-me-footer {
     background-color: white;
@@ -107,8 +114,10 @@ footer a {
 .social-media-footer{
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
 }
 .social-media-footer a {
     color: white;
@@ -117,4 +126,34 @@ footer a {
 .social-media-footer a:hover {
     text-decoration:underline;
     transition: 0.5s;
+}
+
+@media(max-width:500px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    header h1 {
+        margin: 0;
+        text-align: center;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+        margin: 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px) {
+    header h1 {
+        margin-bottom: 5%;
+    }
 }
